@@ -1,9 +1,9 @@
 function getListStudentIds(tableauObjets) {
-    if (!Array.isArray(tableauObjets)) {
-      return [];
-    }
-  
-    return tableauObjets.map((etudiant) => etudiant.id);
+  if (!Array.isArray(tableauObjets)) {
+    return [];
   }
-  
-  export default getListStudentIds;
+
+  return tableauObjets.map((etudiant) => etudiant.id);
+}
+
+export default getListStudentIds;
